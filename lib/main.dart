@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(App());
+  runApp(GetApp());
 }
 
-class App extends StatelessWidget {
+class GetApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Flutter!"),
+          title: Text("Flutter yah~!"),
         ),
-        body: Center(
+        body: Align(
+          alignment: Alignment.centerLeft,
           child: Text("Hello world!"),
         ),
       ),
